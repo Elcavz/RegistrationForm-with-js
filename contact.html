@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body class="container">
+<div class="container col-sm-8">
+
+    <h3 class="text-center">Write Us Now</h3>
+    <div>
+
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+        <label for="location">Location</label>
+        <select id="location" name="location">
+            <option value="luzon">Luzon</option>
+            <option value="visayas">Visayas</option>
+            <option value="mindanao">Mindanao</option>
+        </select>
+
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+        <button id="submitButton">
+            Submit
+        </button>
+    </div>
+</div>
+<div class="container">
+    <h2>first Name: <span id="fnameContainer">temporary value</span> </h2>
+    <h2>last Name: <span id="lnameContainer">test</span> </h2>
+    <h2>location: <span id="locationContainer"></span> </h2>
+    <h2>Subject: <span id="subjectContainer"></span> </h2>
+</div>
+
+
+<script src="myJS.js"></script>
+</body>
+</html>
