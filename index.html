@@ -6,42 +6,68 @@
     <title>Registration Form</title>
 </head>
 <body>
-    <h1>Registration Form</h1>
-    <div>
-        <label for="first_name">First Name:</label>
-        <input autocomplete="off" id="fname" type="text" name="first_name" required><br><br>
+    <div style="display: flex; flex-direction: row; width: 100%; justify-content: center;">
+        <div style="display: flex; flex-direction: row; width: 50%; justify-content: center;">
+            <div style="flex-direction: column;">
+                <h1>Registration Form</h1>
+                <div>
+                    <label for="first_name">First Name:</label>
+                    <input autocomplete="off" id="fname" type="text" name="first_name" required><br><br>
 
-        <label for="last_name">Last Name:</label>
-        <input autocomplete="off" id="lname" type="text" name="last_name" required><br><br>
+                    <label for="last_name">Last Name:</label>
+                    <input autocomplete="off" id="lname" type="text" name="last_name" required><br><br>
 
-        <label for="username">Username:</label>
-        <input id="uname" type="text" name="username" required><br><br>
-        
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
-        
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required><br><br>
-        
-        <label for="confirm_password">Confirm Password:</label>
-        <input type="password" id="confirm_password" name="confirm_password" required>
-        <span id="confirm-password-span"></span><br><br>
-        
-        <label>Gender:</label>
-        <input type="radio" id="male" name="gender" value="Male">
-        <label for="male">Male</label>
-        <input type="radio" id="female" name="gender" value="Female">
-        <label for="female">Female</label>
-        <input type="radio" id="other" name="gender" value="Other">
-        <label for="other">Other</label><br><br>
-        
-        <input type="checkbox" id="terms" name="terms" required>
-        <label for="terms">I agree to the Terms and Conditions</label><br><br>
-        
-        <button id="btn">Signup</button>
+                    <label for="username">Username:</label>
+                    <input id="uname" type="text" name="username" required><br><br>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+                    
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required><br><br>
+                    
+                    <label for="confirm_password">Confirm Password:</label>
+                    <input type="password" id="confirm_password" name="confirm_password" required><br>
+                    <div style="display: flex; flex-direction: row; justify-content: end;">
+                        <span id="confirm-password-span" style="color: red;"></span><br><br>
+                    </div>
+                    
+                    <label>Gender:</label>
+                    <input type="radio" id="male" name="gender" value="Male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="Other">
+                    <label for="other">Other</label><br><br>
+                    
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the Terms and Conditions</label><br><br>
+                    
+                    <button id="btn">Signup</button>
+                </div>
+<!-- 
+                <h1 id="successSU" style="display: none;">Successfully Signup as <span id="user" style="text-decoration: underline; color: blue; font-weight: bold;"></span> !</h1> -->
+            </div>
+        </div>
+        <section style="display: flex; flex-direction: row; width: 50%; justify-content: left;">
+            <div style="flex-direction: column;">
+                <h1>Is your data is correct?</h1>
+                
+                <div style="width: fit-content; display: flex; flex-direction: row;">
+                    <h4>First Name:</h4>&nbsp;<h4 id="dataFname"></h4>
+                </div>
+                <div style="width: fit-content; display: flex; flex-direction: row;">
+                    <h4>Last Name:</h4>&nbsp;<h4 id="dataLname"></h4>
+                </div>
+                <div style="width: fit-content; display: flex; flex-direction: row;">
+                    <h4>Username:</h4>&nbsp;<h4 id="dataUname"></h4>
+                </div>
+                <div style="width: fit-content; display: flex; flex-direction: row;">
+                    <h4>Email:</h4>&nbsp;<h4 id="dataEmail"></h4>
+                </div>
+            </div>
+        </section>
     </div>
-
-    <h1 id="successSU" style="display: none;">Successfully Signup as <span id="user" style="text-decoration: underline; color: blue; font-weight: bold;"></span> !</h1>
 
 <script src="script.js"></script>
 </body>
